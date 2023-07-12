@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 200px;
+    max-height: 100px;
+    margin-left: 100px;
+    object-fit: cover;
+    opacity: 1;
+}
