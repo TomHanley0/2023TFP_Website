@@ -3,17 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initia-scale=1.0">
-        <link rel="sylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <title>2023 iGEM | SOILutions — Solutions For Soil Health</title>
     </head>
     <body>
         <div class="showcase">
-            <video src="LandingPageVideoBackground.mp4" muted loop autoplay></video>
+            <video src="LandingPageVideoBackground.mp4" autoplay muted></video>
+        </div>
+        <div class="menu__bar">
+            <a href="index.html" id="navBarLogo"><img class="logo" src="logo.png" width="150px" ></img></a>
+
+            <ul>
+                <li id="project-NavItem">
+                    <a href="#">Project ▾</a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#">Description</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">Results</a></li>
+                            <li><a href="#">Implementation</a></li>
+                        </ul>
+                        </div>
+                
+                </li>
+                <li id="wetLab-NavItem">
+                    <a href="#">Wet Lab ▾</a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#">Experiments</a></li>
+                            <li><a href="#">Proof of concept</a></li>
+                            <li><a href="#">Parts</a></li>
+                            
+                         </ul>
+                        </div>
+                </li>
+                <li id="modelling-NavItem">
+                    <a href="#">Modelling ▾</a>
+                
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#">Protein Modelling</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            
+                    </ul>
+                </div>
+                </li>
+
+                <li id="humanPractices-NavItem">
+                    <a href="#">Human Practices ▾</a>
+                    <div class="dropdown__menu" id="humanPracticeDropDown">
+                        <ul>
+                            <li><a href="#">Integrated</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Communication</a></li>
+                            <li><a href="#">Inclusivity</a></li>
+                        </ul>
+                        </div>
+                </li>
+                <li id="team-NavItem">
+                    <a href="#">Team ▾</a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Attributions</a></li>
+                            <li><a href="#">Partnerships</a></li>
+                            <li><a href="#">Contributions</a></li>
+                            <li><a href="#">Awards</a></li>
+                        </ul>
+                        </div>
+
+                </li>
+            </ul>
         </div>
         
 
         <div class="LandingPageText">
-            <h2>Solutions For Soil Health</h2>
+            <h2></h2>
         </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="app.js"></script>
      </body>        
 </html>
