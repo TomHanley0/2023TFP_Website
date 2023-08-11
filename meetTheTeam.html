@@ -15,15 +15,15 @@
                 <span></span>
             </div>
         </div>
-            <div class="menu__bar">
+            <div class="menu__bar" id="menu-bar-id">
                 <a href="index.html" id="navBarLogo"><img class="logo" src="logo.png" width="150px" ></img></a>
     
-                <ul>
+                <ul id="navBarText-id">
                     <li id="project-NavItem">
                         <a href="#">Project ▾</a>
                         <div class="dropdown__menu" id="projectDropDown">
                             <ul> 
-                                <li><a href="#">Description</a></li>
+                                <li><a href="index.html">Description</a></li>
                                 <li><a href="#">Design</a></li>
                                 <li><a href="#">Engineering</a></li>
                                 <li><a href="#">Results</a></li>
@@ -71,7 +71,7 @@
                         <a href="#">Team ▾</a>
                         <div class="dropdown__menu">
                             <ul>
-                                <li><a href="#">Our Team</a></li>
+                                <li><a href="meetTheTeam.html">Our Team</a></li>
                                 <li><a href="#">Attributions</a></li>
                                 <li><a href="#">Partnerships</a></li>
                                 <li><a href="#">Contributions</a></li>
@@ -82,38 +82,137 @@
                     </li>
                 </ul>
             </div>
-
        <section class="meetTheTeam_header">
         
          
         <div class="text-box" id="homePageText">
-            <h1 id="homeTitleText">QUANTUM EDUCATION</h1>
-            <p id="homeSubtitleText">A new dimension to learning</p>          
+            <h1 id="homeTitleText">Meet The Team</h1>
+            <p id="homeSubtitleText">of SOILutions</p>          
         </div>
           
         
         </section>
+
+        
+        <section class="teamMembers">
+            <h1 class="teamMembers-divider">Wet Lab</h1>
+            <div class="meetTheTeam-WetLab">
+            <div class="teamContainer">
+                
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/Person-TomHanley.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Tom Hanley</h1>
+                    
+                    <h4>Student Leader — Design and Programming</h4>
+                    <span class="name-underline"></span>
+                    <p>Tom is a valuble member of our team, responsible for building the Wiki and contributing to the team vision.</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/Person-ErikaSandiego.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Erika Sandiego</h1>
+                    
+                    <h4>Student — Marketing</h4>
+                    <span class="name-underline"></span>
+                    <p>Erika is responsible for all marketing documentation runs regular brainstorming meetings to promote our ideas.</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/Person-SkandaguruMurugabalaji.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Skanda Murugabalaji</h1>
+                    
+                    <h4>Student — Marketing</h4>
+                    <span class="name-underline"></span>
+                    <p>Tom is a valuble member of our team, responsible for building the Wiki and contributing to the team vision.</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/IMG_3053.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Tom Hanley</h1>
+                    
+                    <h4>Design and Programming — Lead</h4>
+                    <span class="name-underline"></span>
+                    <p>Tom is a valuble member of our team, responsible for building the Wiki and contributing to the team vision.</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/IMG_3053.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Tom Hanley</h1>
+                    
+                    <h4>Design and Programming — Lead</h4>
+                    <span class="name-underline"></span>
+                    <p>Tom is a valuble member of our team, responsible for building the Wiki and contributing to the team vision.</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/IMG_3053.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Tom Hanley</h1>
+                    
+                    <h4>Design and Programming — Lead</h4>
+                    <span class="name-underline"></span>
+                    <p>Tom is a valuble member of our team, responsible for building the Wiki and contributing to the team vision.</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img class="teamImg" src="assets/Images/IMG_3053.jpg" alt="Tom Hanley">
+                    <div class="card-intro">
+                    <h1>Tom Hanley</h1>
+                    
+                    <h4>Design and Programming — Lead</h4>
+                    <span class="name-underline"></span>
+                    <p>Tom is a valuble member of our team, responsible for building the Wiki and contributing to the team vision.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
        
    
        <script src="TimelineMax.js"></script>
        <script src="TweenMax.js"></script>
        
        <script src="app.js"></script>
+       <script src="animate.js"></script>
+       <script src="animation-dropDown.js"></script>
        <script>
 
-           const menu_toggle = document.querySelector('.menu-toggle');
-           const sidebar = document.querySelector('.menu__bar');
-           
-           menu_toggle.addEventListener('click', () => {
-               menu_toggle.classList.toggle('is-active');
-               sidebar.classList.toggle('is-active');
-           });
-           
-               
-           
-           
-           
-           </script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.menu__bar');
+        
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        });
+        
+            
+        
+        
+        
+        </script>
+      <!--  <script>
+            // When the user scrolls down 50px from the top of the document, resize the header's font size
+            window.onscroll = function() {scrollFunction()};
+            navBarBackground = document.getElementById("menu-bar-id");
+            navBarText = document.getElementById("navBarText-id");
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 200) {
+                document.getElementById("menu-bar-id").style.backgroundColor = "#d5d5d572";
+                document.getElementById("navBarText-id").style.color = "#000000";
+              } else {
+                document.getElementById("menu-bar-id").style.backgroundColor = "#d5d5d500";
+                document.getElementById("navBarText-id").style.color = "#fff";
+              }
+            }
+            </script>
+
+            --> 
 
     </body>
 </html>
